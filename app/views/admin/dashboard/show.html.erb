@@ -1,2 +1,15 @@
-<h1>Admin::Dashboard#show</h1>
-<p>Find me in app/views/admin/dashboard/show.html.erb</p>
+<h1>Admin Dashboard</h1>
+
+<% puts @product.inspect %>
+<% puts @product.inspect %>
+
+
+
+  <ul class="list-group">
+    <li class="list-group-item list-group-item-info"> The number of products: <%= @product_count %> </li>
+    <li class="list-group-item list-group-item-info"> The number of categories: <%= @category_count.count %> </li>
+  </ul>
+
+
+  <%= link_to "Home", root_path, class: 'btn btn-lg btn-primary' %>
+    <%= link_to "Products", admin_products_path, class: 'btn btn-lg btn-primary' %> 
