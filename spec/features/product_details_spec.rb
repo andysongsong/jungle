@@ -4,12 +4,12 @@ RSpec.feature "Visitor click one of the product partials and get to new page", t
 
     # SETUP
     before :each do
-      @category = Category.create! name: 'Dog'
+      @category = Category.create! name: 'Apparel'
 
       @category.products.create!(
         name:  Faker::Hipster.sentence(3),
         description: Faker::Hipster.paragraph(4),
-        image: open_asset('dog1.jpg'),
+        image: open_asset('Apparel1.jpg'),
         quantity: 10,
         price: 64.99
       )
